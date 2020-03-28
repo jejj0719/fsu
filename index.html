@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공부포트폴리오</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_logo">
+        <img src="./image/logo-image.jpg" alt="logo" />
+      </div>
+      <div class="header_container">
+        <div class="header_title">
+          Welcome to FSU
+        </div>
+      </div>
+    </header>
+    <section class="section section_siteinfo">
+      <article class="article_siteinfo">
+        <nav class="nav">
+          <div class="nav_button" onclick="nav_button_handler()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="nav_container">
+            <div class="nav_menu" onclick="nav_click('header')">HOME</div>
+            <div class="nav_menu" onclick="nav_click('section_siteinfo')">ABOUT</div>
+            <div class="nav_menu" onclick="nav_click('section_study')">STUDY</div>
+            <div class="nav_menu" onclick="nav_click('section_question')">QUESTION</div>
+            <div class="nav_menu" onclick="nav_click('footer')">CONTACT</div>
+          </div>
+        </nav>
+        <div class="article_title_wrap">
+          <span class="article_title">ABOUT</span>
+        </div>
+        <div class="siteinfo_container">
+          <div class="siteinfo_introduce">
+            <div class="siteinfo_introduce_title">
+              FSU란?
+            </div>
+            <div class="siteinfo_introduce_text">
+              FSU에 오신것을 환영합니다.
+              <span class="highlight">FSU는 Find Study Use</span>의 약자로,
+              비전공자 혹은 일반인들에게 프로그래밍을 알려주는 무료 온라인
+              수업입니다.
+            </div>
+            <div class="siteinfo_introduce_text">
+              입문자의 가장 큰 고민은
+              <span class="highlight">"무엇을 모르는지 모르는상태"</span> 일
+              겁니다. 인터넷에는 프로그래밍을 공부하는 데 필요한 모든 정보가
+              있지만, 이 모든 지식들은 전문가들에게 더욱 도움이 될뿐 "무엇을
+              모르는지 모르는 상태"의 입문자는 찾기조차 어려울 겁니다.
+            </div>
+            <div class="siteinfo_introduce_text">
+              저희의 목표는
+              <span class="highlight"
+                >"무엇을 모르는지 모르는 상태" 에서 "무엇을 모르는지 아는
+                상태"</span
+              >가 되는 것입니다. 무엇을 모르는지를 안다면 지금 당장은 몰라도, 그
+              지식이 필요할 때 공부할 수 있는 능력을 가지게 됩니다.
+            </div>
+          </div>
+          <div class="siteinfo_introduce2">
+            <div class="siteinfo_introduce2_title">
+              질문
+            </div>
+            <div class="siteinfo_introduce2_text">
+              하단에는 질문이 있습니다. 이것을 통해서 질문을 받습니다. 질문을
+              달면 사이트 관리자에게 이메일이 발송되기 때문에 질문은 모두
+              관리자에게 열람합니다.
+            </div>
+            <div class="siteinfo_introduce2_text">
+              답변할 수 있는 것은 최대한 신속하게 답변해 드립니다. 질문은 자기
+              자신을 성장시키는 요인중 하나입니다. 질문을 두려워하지 마세요.
+            </div>
+            <button class="siteinfo_introduce2_button" onclick="nav_click('section_question')">질문하러 가기!</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section section_study">
+      <article class="article_study">
+        <div class="article_title_wrap">
+          <span class="article_title">STUDY</span>
+        </div>
+        <input type="checkbox" id="more_checkbox" />
+        <div class="study_container">
+          <div class="study_studybox" id="studybox1" onclick="studybox_click(0)">
+            <span class="study_title">HTML</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/html.png')"
+            ></div>
+            <p class="study_text">
+              1. HTML의 기본 문법<br />
+              2. 블럭과 인라인<br />
+              3. Hyperlink란?<br />
+              4. HTML5 시맨틱 태그<br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox2" onclick="studybox_click(1)">
+            <span class="study_title">CSS</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/css.png')"
+            ></div>
+            <p class="study_text">
+              1. CSS의 기본 문법 <br />
+              2. 선택자<br />
+              3. 반응형 레이아웃<br />
+              4. 플렉스 박스 레이아웃<br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox3" onclick="studybox_click(2)">
+            <span class="study_title">JavaScript</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/js.png')"
+            ></div>
+            <p class="study_text">
+              1. JS 기본개념과 문법 <br />
+              2. 객체와 함수와 this <br />
+              3. 프로토타입 <br />
+              4. 실행 컨텍스트 <br />
+              5. ES6 문법 <br/>
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox4" onclick="studybox_click(3)">
+            <span class="study_title">TypeScript</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/typescript.png')"
+            ></div>
+            <p class="study_text">
+              1. 정적 타이핑 <br />
+              2. 클래스 <br />
+              3. 인터페이스 <br />
+              4. 타입 앨리어스 <br />
+              5. 제네릭 <br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox5" onclick="studybox_click(4)">
+            <span class="study_title">React</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/react.png')"
+            ></div>
+            <p class="study_text">
+              1. props와 state <br />
+              2. 라이프사이클 <br />
+              3. Hooks란? <br />
+              4. Redux 상태관리 <br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox6" onclick="studybox_click(5)">
+            <span class="study_title">Sass</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/sass.png')"
+            ></div>
+            <p class="study_text">
+              1. Sass 소개 <br />
+              2. Sass 기본 문법 <br />
+              3. 조건과 반복 <br />
+              4. Sass의 내장 함수 <br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox7" onclick="studybox_click(6)">
+            <span class="study_title">Node.js</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/node.png')"
+            ></div>
+            <p class="study_text">
+              1. Basics <br />
+              2. npm <br />
+              3. module <br />
+              4. 비밀설정정보 관리 <br />
+            </p>
+          </div>
+          <div class="study_studybox" id="studybox8" onclick="studybox_click(7)">
+            <span class="study_title">JAVA</span>
+            <div
+              class="study_img"
+              style="background-image: url('./image/study_image/java.png')"
+            ></div>
+            <p class="study_text">
+              1. Java 기본 문법 <br />
+              2. 객체 지향 <br />
+              3. 멀티 스레드 <br />
+              4. 제한자 <br />
+              5. 캡슐화 <br />
+            </p>
+          </div>
+        </div>
+        <label 
+          for="more_checkbox" 
+          class="study_label"
+          onclick="readmore_toggle()"
+        >강의 더보기</label>
+      </article>
+    </section>
+    <section class="section section_question">
+      <article class="article_question">
+        <div class="article_title_wrap">
+          <span class="article_title">QUESTION</span>
+        </div>
+
+        <form id="question_form" action method="post">
+          <div class="question_box">
+            <div class="row">
+              <div id="name">
+                <input name="name" type="text" placeholder="이름..." />
+              </div>
+            <div id="email">
+              <input
+                name="email"
+                type="email"
+                placeholder="이메일..."
+              />
+            </div>
+          </div>
+            <div id="subject">
+              <input
+                name="subject"
+                type="text"
+                placeholder="제목..."
+              />
+            </div>
+            <div id="message">
+              <textarea
+                name="message"
+                type="text"
+                placeholder="내용..."
+              /></textarea>
+            </div>
+            <div id="form_submit">
+              <button type="submit" class="button">
+                질문 보내기
+              </button>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <div class="top_btn_wrap">
+      <i class="fas fa-arrow-up" id="top_btn" onclick="nav_click('header')"></i>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_contact_container">
+        <div class="footer_contact1">
+          <div>
+            <div class="footer_contact1_phone">
+              <i class="fas fa-phone" id="footer_contact1_phone_i"></i
+              ><a href="tel:+010-9297-1404">010.9297.1404</a>
+            </div>
+            <div class="footer_contact1_email">
+              <i class="fas fa-envelope-square" id="footer_contact1_email_i"></i
+              ><a href="mailto:ijjeon071919@gmail.com"
+                >ijjeon071919@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_contact2">
+          <div>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div>
+            <i class="fab fa-github"></i>
+          </div>
+          <div>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        FSU <span class="copyright">©2020</span>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

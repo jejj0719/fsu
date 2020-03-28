@@ -1,0 +1,108 @@
+.header {
+  animation: GradientBg 30s ease infinite;
+}
+
+.siteinfo_introduce {
+  opacity: 0;
+}
+
+.siteinfo_introduce2 {
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.study_container,
+.study_label,
+#name,
+#email,
+#subject,
+#message,
+#form_submit,
+.fa-instagram,
+.fa-github,
+.fa-facebook-square {
+  opacity: 0;
+}
+
+@media (max-width: 449px) {
+  .siteinfo_introduce {
+    opacity: 1;
+  }
+
+  .siteinfo_introduce2 {
+    opacity: 1;
+  }
+
+  .study_container,
+  .study_label,
+  .question_box,
+  .fa-instagram,
+  .fa-github,
+  .fa-facebook-square {
+    opacity: 1;
+  }
+}
+/* animation *********************************************************/
+
+@keyframes GradientBg {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.25);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
