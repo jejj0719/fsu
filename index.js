@@ -48,6 +48,10 @@ const nav_button_handler = () => {
   }
 };
 
+const page_open = p => {
+  window.open(p);
+};
+
 const studybox_click = n => {
   //모바일
   if (studybox_on == false && window.innerWidth < 501) {
